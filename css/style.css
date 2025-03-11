@@ -1,0 +1,88 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+  :root{
+    --red: #A30000;
+    --grey: #808080;
+    --purple: #702082;
+    --lightblue: #D0E7EC;
+    --darkred: #79210B;
+    --offwhite: #EAF8FB;
+    --green: #177105;
+  }
+
+  body{
+    font-family: 'Roboto', san-serif;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--purple);
+    background: var(--offwhite);
+  }
+
+  .radio {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: #575294;
+    color: var(--offwhite);
+  }
+
+  #name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--lightblue);
+    color: var(--darkred);
+  }
+
+  #message {
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: var(--green);
+  }
+
+  .skip a {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    background: #ffffff;
+  }
+  
+  .skip a:focus {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #ffffff;
+  }
+  
